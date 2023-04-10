@@ -1,8 +1,15 @@
-import React from 'react'
+import React ,{useContext,useEffect} from 'react';
 
-const feed = () => {
-  return <div>feed</div>
-  
-}
+import Context  from "../context/contextApi";
+import LeftNav from "./LeftNav";
 
-export default feed
+
+const Feed = () => {
+  return (
+  <div className="flex flex-row h-[calc(100%-56px)]">
+    <LeftNav />
+  </div>
+  );
+};
+
+export default Feed;
